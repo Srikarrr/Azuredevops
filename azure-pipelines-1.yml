@@ -14,7 +14,7 @@ variables:
   dockerRegistryServiceConnection: 'd56e0077-75ec-46e9-81d0-b186d8f9f3a1'
   imageRepository: 'srikarrrazuredevops'
   containerRegistry: 'democontainer4321.azurecr.io'
-  dockerfilePath: '**/Dockerfile'
+  dockerfilePath: '.pipeline/Dockerfile'
   tag: '$(Build.BuildId)'
   imagePullSecret: 'democontainer432118341014-auth'
 
