@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: srikarrrazuredevops 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: srikarrrazuredevops
+  template:
+    metadata:
+      labels:
+        app: srikarrrazuredevops 
+    spec:
+      containers:
+        - name: srikarrrazuredevops 
+          image: democontainer4321.azurecr.io/srikarrrazuredevops
+          ports:
+          - containerPort: 80
